@@ -37,21 +37,20 @@ void loop()
    	digitalWrite(pin_led, HIGH); 
    
 	// PWM
-	//AnalogWrite(pin_led,pot);
+	//analogWrite(pin_led,pot);
 
 	Serial.println("LED ==> ON"); 
    	}
     
   else if(Serial.read() == '0') 
-    {
+    	{
 	//  ON/OFF
-    digitalWrite(pin_led, LOW);
+    	digitalWrite(pin_led, LOW);
     
 	// PWM
-	//AnalogWrite(pin_led,0);
+	//analogWrite(pin_led,0);
 
 	Serial.println("LED ==> OFF"); 
-
-    }
+    	}
 }
  
